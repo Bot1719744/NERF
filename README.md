@@ -46,6 +46,30 @@ This project requires the following dependencies:
 
 ---
 
+---
+
+## Metrics for Analysis
+
+### PSNR, SSIM, and LPIPS
+These metrics are used to assess the quality of rendered images:
+- **PSNR** (Peak Signal-to-Noise Ratio): Measures pixel-wise fidelity, where higher values indicate better reconstruction quality.
+- **SSIM** (Structural Similarity Index): Assesses structural similarity between rendered and ground truth images, with values closer to 1 indicating higher similarity.
+- **LPIPS** (Learned Perceptual Image Patch Similarity): Measures perceptual similarity, with lower values reflecting closer alignment to human perception.
+
+### Time per Iteration
+Measures the average time taken by the model to process one iteration during training.
+- **Purpose**: Reduced time per iteration indicates improved computational efficiency, enabling faster model training and rendering. This metric reflects the performance benefits of the grid-based representation and adaptive sampling.
+
+### Temporal Consistency
+Quantifies frame-to-frame variation when rendering video sequences.
+- **Purpose**: Ensures smooth frame transitions, crucial for video quality, as inconsistencies can cause visual flickering. Lower values in this metric indicate better temporal stability, meaning the rendered outputs change minimally from one frame to the next.
+
+### High-Frequency Content
+Measures the amount of high-frequency information in rendered outputs, indicating the presence of fine details or noise.
+- **Purpose**: Reflects the level of detail preserved in the model’s outputs. Controlled high-frequency content is ideal for enhancing detail while avoiding excessive noise, especially in detailed regions.
+
+---
+
 ## Special Considerations and Known Issues
 
 1. **Rendering Artifacts**: If temporal inconsistencies appear in video rendering (e.g., flickering), consider adjusting the multisampling density or `N_samples` to improve frame stability.
@@ -60,5 +84,4 @@ This project requires the following dependencies:
 
 ## Dataset Submission
 
-The dataset used for this project should be a set of 2D images of a scene and the corresponding camera poses. The data should follow the following structure:
-Thank you for the clarification. Here’s an updated README tailored to the single-file setup:
+The dataset used for this project： http://cseweb.ucsd.edu/~viscomp/projects/LF/papers/ECCV20/nerf/tiny_nerf_data.npz
