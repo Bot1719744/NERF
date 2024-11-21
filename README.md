@@ -85,3 +85,23 @@ Measures the amount of high-frequency information in rendered outputs, indicatin
 ## Dataset Submission
 
 The dataset used for this project： http://cseweb.ucsd.edu/~viscomp/projects/LF/papers/ECCV20/nerf/tiny_nerf_data.npz
+
+---
+
+## Contribution
+
+Here is a possible contribution list for your project, written in English:
+
+### Contributions:
+
+- **Simplified Implementation of Neural Radiance Fields**: Dingwen Liu
+
+- **Data Preparation**: Xiaolin Liu, Dingwen Liu
+
+- **Model Development and Training**: Dingwen Liu, Irene Cai, Xiaolin Liu, Qingyun Xu
+
+- **Visualization of Results**: Dingwen Liu, Irene Cai
+
+- **Incorporation of ZipNeRF Features**: Dingwen Liu
+
+- **Focus on Simplicity and Usability**: Dingwen Liu, Qingyun Xu
